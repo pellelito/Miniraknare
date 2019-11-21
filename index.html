@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Miniräknare</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator-grid">
+		<div  class="output">  
+			<div id="prev_operand" onClick="reply_click(this.id)" class="prev_operand"></div>
+			<div id="curr_operand" onClick="reply_click(this.id)" class="curr_operand"></div>
+		</div>
+		<button id="ac" onClick="allClear()" class="double" >AC</button>
+		<button id="del" onClick="deleteThis()">DEL</button>
+		<button  id="/" value=/ onclick="getOperator(this.value)">/</button>
+		<button id="1" value=1 onclick="getNumber(this.value)">1</button>
+		<button id="2" value=2 onclick="getNumber(this.value)">2</button>
+		<button id="3"value=3 onclick="getNumber(this.value)">3</button>
+		<button id="*" value=* onclick="getOperator(this.value)">X</button>
+		<button id="4" value=4 onclick="getNumber(this.value)">4</button>
+		<button id="5" value=5 onclick="getNumber(this.value)">5</button>
+		<button id="6" value=6 onclick="getNumber(this.value)">6</button>
+		<button id="+"value=+ onclick="getOperator(this.value)">+</button>
+		<button id="7" value=7 onclick="getNumber(this.value)">7</button>
+		<button id="8" value=8 onclick="getNumber(this.value)">8</button>
+		<button id="9" value=9 onclick="getNumber(this.value)">9</button>
+		<button id="-" value=- onclick="getOperator(this.value)">-</button>
+		<button id="." value=. onclick="getNumber(this.value)">.</button>
+		<button id="0" value=0 onclick="getNumber(this.value)">0</button>
+		<button id="equal" onClick="calculate()" class="double" >=</button>
+	</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
